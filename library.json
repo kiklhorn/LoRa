@@ -1,0 +1,37 @@
+{
+  "name": "LoRa",
+  "version": "0.8.0",
+  "description": "An Arduino library for sending and receiving data using LoRa radios.",
+  "keywords": "lora, communication, radio",
+  "authors": [
+    {
+      "name": "Sandeep Mistry",
+      "email": "sandeep.mistry@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandeepmistry/arduino-LoRa"
+  },
+  "homepage": "https://github.com/sandeepmistry/arduino-LoRa",
+  "license": "MIT",
+  "dependencies": {
+    "Semtech SX1276/77/78/79": ">=1.0.0"
+  },
+  "frameworks": [
+    "arduino"
+  ],
+  "platforms": [
+    "*"
+  ],
+  "includes": [
+    "LoRa.h"
+  ],
+  "export": {
+    "arduino": {
+      "build": {
+        "extraFlags": "-DPLATFORMIO=3000000"
+      }
+    }
+  }
+}
